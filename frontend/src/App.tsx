@@ -16,10 +16,8 @@ function App() {
   return (
       <Router>
     <div className="grid-container">
-<head>
     <link rel="stylesheet" href="style.css"></link>
     <title>Emerald Chef</title>
-</head>
 <body>
     <div>
         <header className="header">
