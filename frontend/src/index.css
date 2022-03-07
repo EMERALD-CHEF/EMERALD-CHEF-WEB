@@ -73,7 +73,7 @@ a:hover {
   padding: 0.5rem;
   background: none;
   border: none;
-  color: #ffffff;
+  color: #e9c0c0;
   cursor: pointer;
 }
 
@@ -83,6 +83,8 @@ a:hover {
   width: 30rem;
   background-color: #f0f0f0;
   height: 100%;
+  top: 0;
+  left: 0;
 }
 
 .sidebar.open {
