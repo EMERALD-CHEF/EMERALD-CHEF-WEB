@@ -4,6 +4,8 @@ import './App.css';
 import { Route, BrowserRouter as Router, Routes, Link } from 'react-router-dom';
 import Product from './Products/Products';
 import Home from './Home/Home';
+import Orders from './Orders/Orders';
+import OrderDetail from './Orders/OrderDetail';
 
 function App() {
   const openMenu = () => {
@@ -39,6 +41,7 @@ function App() {
               <div className="header-links">
                 <Link to="/">Home</Link>
                 <Link to="/catalog">Catalog</Link>
+                <Link to="/orders">Orders</Link>
               </div>
             </header>
           </div>
@@ -46,6 +49,8 @@ function App() {
               <Routes>
                   <Route path="/" element={<Home />} />
                   <Route path="/catalog" element={<Product />} />
+                  <Route path="orders" element={<Orders />}></Route>
+                  <Route path="/order/:id" element={<OrderDetail />}></Route>
               </Routes>
           </main>
           <footer>
