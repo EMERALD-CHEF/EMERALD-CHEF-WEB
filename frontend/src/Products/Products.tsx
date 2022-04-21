@@ -36,7 +36,7 @@ function Products() {
             <div className="products">
                 {products.map((product, index) => {
                     return (
-                    <li key={index}>
+                    <li key={product.id}>
                         <div className="product">
                             <img className="product-image" src={product.imageUrl} alt="product"/>
                             <div className="product-name">
